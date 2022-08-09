@@ -39,6 +39,6 @@ tabela_aux['arvoredecisao']=previsao_arvoredecisao
 tabela_aux['regressaolinear']=previsao_regressaolinear
 
 #plotar gráfico da tabela_aux  criada
-plt.figure(figsize=(15,6))
+plt.figure(figsize=(16,9))
 sns.lineplot(data=tabela_aux)
 plt.show()
