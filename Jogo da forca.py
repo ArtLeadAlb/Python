@@ -9,7 +9,7 @@ letras_acertadas = ''
 numero_tentativas = 0
 
 while True:
-    chute = input('Digite uma letra: ')
+    chute = input('Digite uma letra: ').lower()
     numero_tentativas += 1
 
     if len(chute) > 1:
