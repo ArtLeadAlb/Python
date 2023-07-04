@@ -1,3 +1,5 @@
+"""Famoso jogo da forca (ou palavra secreta)"""
+
 import os
 
 palavra = input('Digite a palavra para que o jogo comece:').lower()
