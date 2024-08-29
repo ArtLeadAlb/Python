@@ -7,15 +7,15 @@ def v_placa(espessura_placa, largura_placa, h=200):
     return v_placa
 
 
-#função de defino o volume do moderador mais o volume da placa
+#função de definir o volume do moderador mais o volume da placa
 def v_moderador_mais_placa(n_placas, largura_placa, h=200):
     v_moderador = (12.59/n_placas)*largura_placa*h
     return v_moderador
 
 
-v_placa15 = v_placa(0.18212612,7.219992862)  # Primeiro colocado = 0.19975, 8.17958     Segundo colocado 0.19794,8.13350
+v_placa15 = v_placa(0.18212612,7.219992862) 
 #calculo do volume do moderador
-v_moderador15 = v_moderador_mais_placa(7, 7.219992862) - v_placa15 # Primeiro colocado = 0.89929 , 8.17958     Segundo colocado = 0.89929, 8.133503845
+v_moderador15 = v_moderador_mais_placa(7, 7.219992862) - v_placa15
 #calculo da razão Vm / Vf
 r15 = v_moderador15 / v_placa15
 print('Arranjo 15x15:')
@@ -66,7 +66,7 @@ def volume_pino(raio=0, h=200):
     return volume_pino
 
 
-volume_pino15 = volume_pino(0.582097157) # primeiro colocado =0.55702   Segundo colocado = 0.56492
+volume_pino15 = volume_pino(0.582097157)
 #calculo do volume do moderador
 volume_moderador15 = volume_moderador_mais_pino(15) - volume_pino15
 #calculo da razão Vm / Vf
